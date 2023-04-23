@@ -8,7 +8,7 @@ export const youtube = new Personalization('youtube', /^https:\/\/www\.youtube\.
         disableArrows: true,
         fetchVidEl: () => document.getElementsByTagName('video')[0]
       });
-      console.log('working', speedVid);
+      console.log('SpeedUpVideos Object : ', speedVid);
       speedVid.activate();
     }, 500);
   }
