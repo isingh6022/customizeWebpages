@@ -69,6 +69,7 @@ export class DownloadImages {
     if (!link) return;
 
     link.click();
+
     setTimeout(() => {
       this._saveNext();
     }, this._delay);
