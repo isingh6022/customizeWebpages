@@ -12,5 +12,22 @@ export const alphacoders = new Personalization('alphacoders', /wall\.alphacoders
     ins.adsbygoogle.adsbygoogle-noablate {
       display: none !important;
     }
+    div.related-image-group {
+      width: 25%;
+      height: max-content;
+    }
+    a.related-image-group-link {
+      position: relative;
+      font-size: 1.5rem;
+    }
+    div.related-image-group-interior-text {
+      width: calc(100% - 20px);
+      height: 90%;
+    }
+    span.related-image-group-title {
+      position: absolute;
+      width: 100%;
+      bottom: 0;
+  }
   `
 });

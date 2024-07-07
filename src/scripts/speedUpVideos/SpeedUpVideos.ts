@@ -8,7 +8,10 @@ export class SpeedUpVideos {
 
   constructor(
     private _vidEl: HTMLVideoElement,
-    private config: { disableArrows?: boolean; fetchVidEl?: () => HTMLVideoElement }
+    private config: {
+      disableArrows?: boolean;
+      fetchVidEl?: () => HTMLVideoElement;
+    }
   ) {
     if (!this.vidEl) {
       console.log('Video not received...');
@@ -174,7 +177,20 @@ export class SpeedUpVideos {
           this._deltaT += 1.0;
           this._updateControlBoxDiv();
           break;
+        case 'KeyS':
+          this._vidEl.paused ? this._vidEl.play() : this._vidEl.pause();
+          break;
+        case 'Space':
+          e.ctrlKey &&
+            (this._vidEl.paused ? this._vidEl.play() : this._vidEl.pause());
+          break;
       }
     });
+  }
+
+  clickVidEl() {
+    this.vidEl.click();
+    this.vidEl.focus();
+    console.log('Clicked the video');
   }
 }
