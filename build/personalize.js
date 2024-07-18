@@ -355,6 +355,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _leetcode__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./leetcode */ "./src/sites/leetcode.ts");
 /* harmony import */ var _leetcode_playground__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./leetcode.playground */ "./src/sites/leetcode.playground.ts");
 /* harmony import */ var _deviantart__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./deviantart */ "./src/sites/deviantart.ts");
+/* harmony import */ var _temp__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./temp */ "./src/sites/temp.ts");
 
 
 
@@ -362,7 +363,8 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-var allSites = [_wall_alphacoders_com__WEBPACK_IMPORTED_MODULE_0__.alphacoders, _youtube_com__WEBPACK_IMPORTED_MODULE_1__.youtube, _video_file__WEBPACK_IMPORTED_MODULE_2__.videoFile, _amazon__WEBPACK_IMPORTED_MODULE_3__.amazon, _deviantart__WEBPACK_IMPORTED_MODULE_6__.deviantArt, _leetcode__WEBPACK_IMPORTED_MODULE_4__.leetcode, _leetcode_playground__WEBPACK_IMPORTED_MODULE_5__.leetcodePlayground];
+
+var allSites = [_wall_alphacoders_com__WEBPACK_IMPORTED_MODULE_0__.alphacoders, _youtube_com__WEBPACK_IMPORTED_MODULE_1__.youtube, _video_file__WEBPACK_IMPORTED_MODULE_2__.videoFile, _amazon__WEBPACK_IMPORTED_MODULE_3__.amazon, _temp__WEBPACK_IMPORTED_MODULE_7__.gifCom, _deviantart__WEBPACK_IMPORTED_MODULE_6__.deviantArt, _leetcode__WEBPACK_IMPORTED_MODULE_4__.leetcode, _leetcode_playground__WEBPACK_IMPORTED_MODULE_5__.leetcodePlayground];
 
 
 /***/ }),
@@ -474,7 +476,87 @@ var leetcode = new _scripts_Personalization__WEBPACK_IMPORTED_MODULE_0__.Persona
   css: getLeetcodeCSS()
 });
 function getLeetcodeCSS() {
-  return "\n\n.content-base .article-base.viewer-base {\n  background-color: #1d354b;\n}\n.content-icon.fa-font {\n  color: #88c0db;\n}\n\n.content-base .article-base.viewer-base .article-inner {\n  background-color: #152f43;\n  color: white;\n}\n\na {\n  color: #89afd2;\n}\n\nnav.leetcode-navbar span.dark:display-none {\n  display: none;\n}\nnav.leetcode-navbar > div.display-none span.display-none {\n  display: flex;\n}\nnav.leetcode-navbar > div.display-none span.display-none + span {\n  display: none;\n}\nnav.nav-bar-container {\n  background-color: #1d354b;\n}\n\nnav.nav-bar-container ul > li * {\n  color: #ffffffad;\n}\n\ndiv.content-viewer-toolbar-base {\n  background-color: #1d354b;\n  height: 35px;\n  padding: 3px 6px 0 0;\n  box-shadow: 0 3px 3px 0 #283f55;\n}\ndiv.content-viewer-toolbar-base button.btn {\n  background-color: #1d354b;\n  color: #ffffffad;\n}\ndiv.content-viewer-toolbar-base button.btn {\n  font-size: 14px;\n}\ndiv.content-viewer-toolbar-base button.btn.prev,\ndiv.content-viewer-toolbar-base button.btn.next {\n  font-size: 14px;\n}\ndiv.content-viewer-toolbar-base button.btn.prev span,\ndiv.content-viewer-toolbar-base button.btn.next span {\n  top: 0;\n}\n\ndiv.list-group-item {\n  background-color: #1d354b;\n  color: white;\n}\n\ndiv.expandable-chapter-list-base .chapter-item .chapter .description::after {\n  background: linear-gradient(to right, rgba(255, 255, 255, 0), #1d354b 50%);\n}\n\ndiv.expandable-chapter-list-base .item-list-group .list-group-item.selected,\ndiv.expandable-chapter-list-base .item-list-group .list-group-item.selected:hover {\n  background-color: #1d354b;\n}\n\ndiv.expandable-chapter-list-base .item-list-group .list-group-item {\n  background-color: #112738;\n}\n\ndiv.expandable-chapter-list-base .chapter-item .list-group {\n  background-color: #1d354b;\n}\n\ndiv.expandable-chapter-list-base .chapter-item .chapter-base.active {\n  background-color: #104369;\n}\ndiv.expandable-chapter-list-base .chapter-item .chapter-base.active:hover {\n  background-color: #112738;\n}\ndiv.expandable-chapter-list-base .chapter-item .chapter-base.active .chapter .description::after {\n  background: linear-gradient(to right, rgba(255, 255, 255, 0), #082439 50%);\n}\ndiv.expandable-chapter-list-base .chapter-item .chapter-base.active {\n  background-color: #082439;\n}\n\n.content-base .article-base div.block-markdown {\n  background-color: #152f43;\n}\ndiv.block-markdown p,\ndiv.block-markdown li {\n  color: #ece9e3;\n}\ndiv.block-markdown blockquote {\n  border-left: 6px solid #37709b;\n  background-color: #274359;\n}\np code {\n  background-color: #8ca6c0;\n  color: #152f43;\n}\nh1,\nh2,\nh3,\nh4,\nh5,\nh6 {\n  color: white !important;\n}\n\ndiv.content-viewer-base .view-controller .content-viewer-view {\n  background-color: #1d354b;\n}\n\n::-webkit-scrollbar {\n  background: #3a5771;\n  width: 10px;\n  height: 10px;\n}\n\n::-webkit-scrollbar-thumb {\n  background: #152d41;\n}\n\n.text-text-secondary {\n  color: #ffffffad;\n}\n";
+  return "\n\n.content-base .article-base.viewer-base {\n  background-color: #1d354b;\n}\n.content-icon.fa-font {\n  color: #88c0db;\n}\n\n.content-base .article-base.viewer-base .article-inner {\n  background-color: #152f43;\n  color: white;\n}\n\na {\n  color: #89afd2;\n}\n\nnav.leetcode-navbar span.dark:display-none {\n  display: none;\n}\nnav.leetcode-navbar > div.display-none span.display-none {\n  display: flex;\n}\nnav.leetcode-navbar > div.display-none span.display-none + span {\n  display: none;\n}\nnav.nav-bar-container {\n  background-color: #1d354b;\n}\n\nnav.nav-bar-container ul > li * {\n  color: #ffffffad;\n}\n\ndiv.content-viewer-toolbar-base {\n  background-color: #1d354b;\n  height: 35px;\n  padding: 3px 6px 0 0;\n  box-shadow: 0 3px 3px 0 #283f55;\n}\ndiv.content-viewer-toolbar-base button.btn {\n  background-color: #1d354b;\n  color: #ffffffad;\n}\ndiv.content-viewer-toolbar-base button.btn {\n  font-size: 14px;\n}\ndiv.content-viewer-toolbar-base button.btn.prev,\ndiv.content-viewer-toolbar-base button.btn.next {\n  font-size: 14px;\n}\ndiv.content-viewer-toolbar-base button.btn.prev span,\ndiv.content-viewer-toolbar-base button.btn.next span {\n  top: 0;\n}\n\ndiv.list-group-item {\n  background-color: #1d354b;\n  color: white;\n}\n\ndiv.expandable-chapter-list-base .chapter-item .chapter .description::after {\n  background: linear-gradient(to right, rgba(255, 255, 255, 0), #1d354b 50%);\n}\n\ndiv.expandable-chapter-list-base .item-list-group .list-group-item.selected,\ndiv.expandable-chapter-list-base .item-list-group .list-group-item.selected:hover {\n  background-color: #1d354b;\n}\n\ndiv.expandable-chapter-list-base .item-list-group .list-group-item {\n  background-color: #112738;\n}\n\ndiv.expandable-chapter-list-base .chapter-item .list-group {\n  background-color: #1d354b;\n}\n\ndiv.expandable-chapter-list-base .chapter-item .chapter-base.active {\n  background-color: #104369;\n}\ndiv.expandable-chapter-list-base .chapter-item .chapter-base.active:hover {\n  background-color: #112738;\n}\ndiv.expandable-chapter-list-base .chapter-item .chapter-base.active .chapter .description::after {\n  background: linear-gradient(to right, rgba(255, 255, 255, 0), #082439 50%);\n}\ndiv.expandable-chapter-list-base .chapter-item .chapter-base.active {\n  background-color: #082439;\n}\n\n.content-base .article-base div.block-markdown {\n  background-color: #152f43;\n}\ndiv.block-markdown p,\ndiv.block-markdown li {\n  color: #ece9e3;\n}\ndiv.block-markdown blockquote {\n  border-left: 6px solid #37709b;\n  background-color: #274359;\n}\np code {\n  background-color: #8ca6c0;\n  color: #152f43;\n}\nh1,\nh2,\nh3,\nh4,\nh5,\nh6 {\n  color: white !important;\n}\n\ndiv.content-viewer-base .view-controller .content-viewer-view {\n  background-color: #1d354b;\n}\n\n::-webkit-scrollbar {\n  background: #3a5771;\n  width: 10px;\n  height: 10px;\n}\n\n::-webkit-scrollbar-thumb {\n  background: #152d41;\n}\n\n.text-text-secondary {\n  color: #ffffffad;\n}\n\ndiv.content-base .question-base .question-area .question-detail {\n  background-color: #ffefd2;\n}\n.question-detail pre {\n  background-color: #eddab9;\n}\n.question-detail img {\n  opacity: 0.75;\n}\ndiv.content-base .question-base .question-wrapper .question-title {\n  color: white;\n}\ndiv.content-base .question-base .answer-btn {\n  background-color: #3e5e7b;\n  color: white;\n}\n.custom-textcase {\n  color: white;\n}\n.editor-area i {\n  color: white;\n}\n.Select-arrow {\n  border-color: white transparent transparent;\n}\n.select-wrapper .Select-arrow-zone {\n  background-color: #3e5e7b;\n}\ndiv.select-wrapper * > .Select-control {\n  background-color: #3e5e7b;\n}\n.Select.has-value.Select--single > .Select-control .Select-value .Select-value-label, .Select.has-value.is-pseudo-focused.Select--single > .Select-control .Select-value .Select-value-label {\n  color: white;\n}\n.editor-btn.btn-default {\n  color: white;\n  background-color: #3e5e7b;\n}\n.content-base .question-base .editor-area {\n  margin-bottom: 200px;\n}\n.result-panel-base * {\n  background-color: #2a4a66 !important;\n  color: white !important;\n}\n";
+}
+
+/***/ }),
+
+/***/ "./src/sites/temp.ts":
+/*!***************************!*\
+  !*** ./src/sites/temp.ts ***!
+  \***************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "gifCom": () => (/* binding */ gifCom)
+/* harmony export */ });
+/* harmony import */ var _scripts_Personalization__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @scripts/Personalization */ "./src/scripts/Personalization.ts");
+/* harmony import */ var _scripts_keyboard__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @scripts/keyboard */ "./src/scripts/keyboard.ts");
+
+
+var gifCom = new _scripts_Personalization__WEBPACK_IMPORTED_MODULE_0__.Personalization('gif_com', /https:\/\/.*gif\.com\//i, {
+  callback: function callback() {
+    setTimeout(function () {
+      var activated = false;
+      window.addEventListener('keydown', function (e) {
+        if ((0,_scripts_keyboard__WEBPACK_IMPORTED_MODULE_1__.compareKeyboardState)(e, [{
+          key: 'Space',
+          ctrl: true
+        }]) && !activated) {
+          activated = true;
+          clearBody();
+          console.log('personalized gif.com');
+          window.addEventListener('paste', function (e) {
+            var _e$clipboardData;
+            var text = (_e$clipboardData = e.clipboardData) === null || _e$clipboardData === void 0 ? void 0 : _e$clipboardData.getData('Text');
+            if (text && text.match(/https?:\/\/[^ ]+/)) {
+              var frame = document.createElement('iframe');
+              frame.src = text;
+              var div1 = document.createElement('div'),
+                div2 = document.createElement('div');
+              div1.appendChild(frame);
+              div1.appendChild(div2);
+              div1.style.position = 'relative';
+              frame.style.height = '95%';
+              frame.style.width = '100%';
+              div2.style.height = '5%';
+              div2.style.width = '100%';
+              div1.style.border = '1px solid #656565';
+              div1.style.borderRadius = '0.5rem';
+              div1.style.overflow = 'hidden';
+              div2.style.backgroundColor = '#7d7d7d';
+              div1.style.display = 'flex';
+              div1.style.flexFlow = 'column nowrap';
+              div1.style.alignItems = 'center';
+              div1.style.justifyContent = 'center';
+              div1.style.height = '40vh';
+              div1.style.width = '12vw';
+              var wide = false;
+              div2.addEventListener('click', function (e) {
+                if (e.shiftKey) {
+                  div1.parentElement.removeChild(div1);
+                } else {
+                  div1.style.width = wide ? '12vw' : '24vw';
+                  wide = !wide;
+                }
+              });
+              div2.addEventListener('contextmenu', function (e) {
+                e.preventDefault();
+                div1.parentElement.removeChild(div1);
+              });
+              document.body.appendChild(div1);
+              document.body.style.display = 'flex';
+              document.body.style.flexFlow = 'row wrap';
+            }
+          });
+        }
+      });
+    }, 700);
+  }
+});
+function clearBody() {
+  while (document.body.lastChild) document.body.removeChild(document.body.lastChild);
 }
 
 /***/ }),

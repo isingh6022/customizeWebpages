@@ -138,5 +138,51 @@ div.content-viewer-base .view-controller .content-viewer-view {
 .text-text-secondary {
   color: #ffffffad;
 }
+
+div.content-base .question-base .question-area .question-detail {
+  background-color: #ffefd2;
+}
+.question-detail pre {
+  background-color: #eddab9;
+}
+.question-detail img {
+  opacity: 0.75;
+}
+div.content-base .question-base .question-wrapper .question-title {
+  color: white;
+}
+div.content-base .question-base .answer-btn {
+  background-color: #3e5e7b;
+  color: white;
+}
+.custom-textcase {
+  color: white;
+}
+.editor-area i {
+  color: white;
+}
+.Select-arrow {
+  border-color: white transparent transparent;
+}
+.select-wrapper .Select-arrow-zone {
+  background-color: #3e5e7b;
+}
+div.select-wrapper * > .Select-control {
+  background-color: #3e5e7b;
+}
+.Select.has-value.Select--single > .Select-control .Select-value .Select-value-label, .Select.has-value.is-pseudo-focused.Select--single > .Select-control .Select-value .Select-value-label {
+  color: white;
+}
+.editor-btn.btn-default {
+  color: white;
+  background-color: #3e5e7b;
+}
+.content-base .question-base .editor-area {
+  margin-bottom: 200px;
+}
+.result-panel-base * {
+  background-color: #2a4a66 !important;
+  color: white !important;
+}
 `;
 }
